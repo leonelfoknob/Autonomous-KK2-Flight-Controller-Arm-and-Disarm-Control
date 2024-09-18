@@ -27,12 +27,28 @@ Power supply and connections for the KK2 and microcontroller
 - Software Requirements
 Arduino IDE (for Arduino)
 Required libraries for your chosen microcontroller
-PWM control libraries (if not already included)
+PWM control libraries (if not already included) in my case for arduino i use <servo.h> library.
 
 - Setup and Connections
 Connect the KK2 Flight Controller to the microcontroller via PWM pins.
 Use the Arduino (or other microcontroller) to send signals for arming, disarming, and controlling the direction of the flight.
 Ensure proper power supply for both the microcontroller and KK2 flight controller.
+
+- Pin configuration in my case 
+#define Trottle_pin 5
+#define Rudder_pin 3
+#define Aileron_pin 6
+#define Elevator_pin 9
+#define Auxiliary_pin 11
+/*
+ **********************kk2 v2 pin****************************************
+ * ----aileron                                   .m1 .5v .gnd           *
+ * ----elevator                                  .m2 .5v .gnd           *
+ * ----throttle           [screen]               .m3 .5v .gnd           *
+ * ----rudder                                    .m4 .5v .gnd           *
+ * ----auxiliaure                                                       *
+ * [left_buton]  [center_left_button] [center_right_buton] [right_buton]*
+ * **********************************************************************
 
 - Microcontroller Configuration
 In the provided code, the Arduino is configured to send specific PWM signals to control the KK2. Ensure that:
