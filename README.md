@@ -2,7 +2,7 @@
 
 This project demonstrates how to autonomously control the KK2 Flight Controller using microcontrollers like Arduino, STM32, ESP8266, or ESP32. Traditionally, the KK2 is operated via user-managed remote controls, but the goal of this project is to automate the arming, disarming, and movement commands of the KK2 without any human intervention.
 
-Developed by MakinaFleo, this project enables the following functionalities:
+Developed by MakinaFleo (leonelfoknob), this project enables the following functionalities:
 
 Arm/Disarm the KK2 Flight Controller automatically.
 Send specific movement commands such as forward, backward, left, right, up, and down, without needing a remote control.
